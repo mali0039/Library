@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav class="navbar navbar-light">
+        <a class="navbar-brand" href="#">
+            <i class="fas fa-book"></i> Library
+        </a>
+      </nav>
+
+      <div class="jumbotron">
+        <h1 class="display-4">Mustafa's Library</h1>
+        <p class="lead">Browse through and enjoy from our collection of unique books!</p>
+        <hr class="my-4">
+        <p>You can add new books, view each book's information, and notify us if you've already read one of our books. </p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">View Collection</a>
+        <a class="btn btn-success btn-lg" href="#" role="button" data-toggle="modal" data-target="#exampleModal">Add Book</a>
+      </div>
+
+      <div class="container">
+          <div class="row">
+      <!-- <div class="card col-lg-4" data-index = "0" style="width: 18rem;">
+        <img src="book.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Book 1</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Cras justo odio</li>
+          <li class="list-group-item">Dapibus ac facilisis in</li>
+          <li class="list-group-item">Vestibulum at eros</li>
+        </ul>
+        <div class="card-body">
+            <a class="read-status btn btn-success btn-md" href="#" id="read" role="button">Read</a>
+            <a class="btn btn-danger btn-md" href="#" id="delete" role="button">Delete</a>
+
+        </div> -->
+      </div>
+      </div>
+      </div>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Add A Book</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-row">
+                      <div class="col">
+                        <input type="text" id = "book-title" class="form-control" placeholder="Book Title">
+                      </div>
+                      <div class="col">
+                        <input type="text" id="author" class="form-control" placeholder="Author">
+                      </div>
+                      <div class="col">
+                        <input type="text" id="numOfPages" class="form-control" placeholder="Num. Of Pages">
+                      </div>
+                      <div class="col">
+                        <input type="text" id="description" class="form-control" placeholder="Description">
+                      </div>
+                    </div>
+                  </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" id="add-button" data-dismiss="modal" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    
+
+
+
+
+
+
+
+      <script src= "index.js"></script>
+      <script src="https://kit.fontawesome.com/02e8f86d62.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
