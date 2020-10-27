@@ -1,16 +1,17 @@
-let bookOne = new Book("The Lightning Thief", "Rick Riordan", "240 pages");
+class Book{
+    constructor(title,author,pages,description) {
+      this.title = title;
+      this.author = author;
+      this.pages = pages;
+      this.readBook = "Not Read";
+      this.index = counter;
+      this.description = description;
+    }
+}
+let bookOne = new Book("The Lightning Thief", "Rick Riordan", "240 pages", "");
 let myLibrary = [];
 var counter = 0;
 addBookToLibrary(bookOne);
-function Book(title,author,pages, description) {
-    this.title = title,
-    this.author = author,
-    this.pages = pages,
-    this.readBook = "Not Read",
-    this.index = counter,
-    this.description = description
-}
-
 Book.prototype.getTemplate = function () {
     if (counter == 0) {
 return `<div class="card col-lg-4" id="card-${counter}" style="width: 18rem;">
